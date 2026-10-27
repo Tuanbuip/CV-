@@ -67,6 +67,7 @@ CV--main/
 Không có tệp cấu hình môi trường hoặc khóa API cần khai báo.
 
 ## Chạy thử
+
 ### Cách nhanh: mở trực tiếp
 
 Mở tệp `CV--main/index.html` bằng trình duyệt. Cách này phù hợp để xem giao diện cơ bản; dùng máy chủ cục bộ nếu muốn kiểm thử trong môi trường HTTP.
