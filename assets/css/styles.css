@@ -256,9 +256,12 @@ ul {
 }
 
 .hero-title {
-  display: block;        /* Luôn chiếm trọn một hàng riêng */
-  clear: both;          /* Tránh bị trôi lên cạnh phần tử trước */
-  margin-top: 12px;     /* Khoảng cách vừa phải với ô "Xin chào, tôi là" */
+  display: block;
+  /* Luôn chiếm trọn một hàng riêng */
+  clear: both;
+  /* Tránh bị trôi lên cạnh phần tử trước */
+  margin-top: 12px;
+  /* Khoảng cách vừa phải với ô "Xin chào, tôi là" */
   animation:
     slideUpFade 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards,
     floating 3.5s ease-in-out infinite 0.8s;
@@ -270,6 +273,7 @@ ul {
     opacity: 0;
     transform: translateY(20px);
   }
+
   100% {
     opacity: 1;
     transform: translateY(0);
@@ -278,9 +282,12 @@ ul {
 
 /* Hiệu ứng nhấp nhô nhẹ nhàng */
 @keyframes floating {
-  0%, 100% {
+
+  0%,
+  100% {
     transform: translateY(0);
   }
+
   50% {
     transform: translateY(-6px);
   }
@@ -764,11 +771,13 @@ ul {
     background-position: -200% 0;
   }
 }
+
 .hero-title {
   display: inline-block;
   animation:
     slideUpFade 1s cubic-bezier(0.16, 1, 0.3, 1) forwards,
-    floating 3.5s ease-in-out infinite 1s; /* Bắt đầu bồng bềnh sau khi hiện xong */
+    floating 3.5s ease-in-out infinite 1s;
+  /* Bắt đầu bồng bềnh sau khi hiện xong */
 }
 
 /* Hiệu ứng trượt từ dưới lên lúc mở trang */
@@ -777,6 +786,7 @@ ul {
     opacity: 0;
     transform: translateY(30px);
   }
+
   100% {
     opacity: 1;
     transform: translateY(0);
@@ -785,9 +795,12 @@ ul {
 
 /* Chuyển động nhấp nhô liên tục */
 @keyframes floating {
-  0%, 100% {
+
+  0%,
+  100% {
     transform: translateY(0);
   }
+
   50% {
     transform: translateY(-8px);
   }
