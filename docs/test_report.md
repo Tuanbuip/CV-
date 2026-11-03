@@ -2,7 +2,7 @@
 
 ## Thông tin chung
 
-- **Dự án:** Portfolio CV cá nhân Nguyễn Văn An
+- **Dự án:** Portfolio CV cá nhân Bùi Anh Tuấn
 - **Phiên bản:** v1.0
 - **Ngày kiểm thử:** 27/10/2026
 - **Phạm vi:** Kiểm tra trang tĩnh `index.html` và các tài nguyên CSS, hình ảnh trong trình duyệt.
