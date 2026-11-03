@@ -1,24 +1,27 @@
 # Nhật ký phát hành
 
-## [v1.0] - 27/10/2026
+## [v1.0] - 03/11/2026
 
-Bản phát hành đầu tiên của website Portfolio CV cá nhân Nguyễn Văn An.
+Bản phát hành đầu tiên của website Portfolio CV cá nhân Bùi Anh Tuấn.
 
 ### Chức năng mới
 
-- Bổ sung trang giới thiệu cá nhân với chức danh và phần mô tả ngắn.
-- Thêm thanh điều hướng đến các mục Giới thiệu, Kỹ năng, Dự án và Liên hệ.
-- Trình bày ảnh đại diện, danh sách kỹ năng và các thẻ dự án mẫu.
-- Bổ sung thông tin liên hệ qua email, GitHub và LinkedIn.
-- Thiết kế giao diện responsive theo hướng mobile-first, sử dụng HTML5 và CSS3.
+- Tạo trang portfolio CV bằng HTML5 và CSS3, gồm các mục Giới thiệu, Kỹ năng, Dự án và Liên hệ.
+- Thêm thông tin giới thiệu, ảnh đại diện, danh sách kỹ năng và bốn thẻ dự án.
+- Bổ sung điều hướng nội bộ, nút xem dự án, liên kết email và hồ sơ mạng xã hội.
+- Thiết kế giao diện tối phong cách công nghệ với hiệu ứng màu neon, kính mờ và bố cục responsive cho màn hình di động, máy tính bảng và máy tính.
 
 ### Lỗi đã sửa
 
-- Đây là phiên bản đầu tiên; chưa có lỗi từ phiên bản trước được ghi nhận hoặc sửa trong bản phát hành này.
+- Cập nhật tên và thông tin hồ sơ từ nội dung mẫu Nguyễn Văn An sang Bùi Anh Tuấn.
+- Thay đường dẫn ảnh đại diện bằng ảnh trong thư mục tài nguyên của dự án.
+- Cập nhật địa chỉ email, GitHub và Facebook trong phần Liên hệ.
+- Chưa có phiên bản trước để ghi nhận lỗi tồn đọng từ các lần phát hành trước.
 
 ### Hạn chế còn tồn tại
 
-- Nội dung cá nhân, thông tin liên hệ và các dự án đang là dữ liệu mẫu; cần thay bằng thông tin thực tế.
-- Liên kết “Xem chi tiết” của các dự án và một số liên kết mạng xã hội chưa trỏ đến trang đích thực.
-- Các dự án Todo List và Weather Dashboard chỉ được giới thiệu bằng nội dung minh họa; website hiện không triển khai chức năng Todo, gọi API thời tiết hoặc mã JavaScript tương tác.
-- Chưa có quy trình kiểm thử tự động hoặc hệ thống quản trị nội dung; cần chỉnh sửa trực tiếp các tệp HTML và CSS.
+- Ảnh minh họa của dự án đầu tiên chưa hiển thị do dữ liệu ảnh chưa hoàn chỉnh.
+- Một số nội dung nhận diện chưa đồng nhất: ký hiệu thương hiệu vẫn là “A”, phần mô tả ảnh đại diện và chân trang vẫn ghi “Nguyễn Văn An”.
+- Các dự án hiện là nội dung giới thiệu; liên kết “Xem chi tiết” vẫn là liên kết mẫu và các dự án Todo List, Weather Dashboard, Blog chưa có chức năng thực tế.
+- Chưa có JavaScript, backend, hệ thống quản trị nội dung, lint hoặc kiểm thử tự động; việc cập nhật nội dung cần chỉnh sửa trực tiếp tệp HTML.
+- Phông chữ tùy chọn được tải từ Google Fonts; khi không có kết nối mạng, trang sẽ dùng phông chữ dự phòng.
