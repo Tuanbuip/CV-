@@ -256,11 +256,34 @@ ul {
 }
 
 .hero-title {
-  font-size: var(--fs-h1);
-  line-height: 1.1;
-  font-weight: 800;
-  letter-spacing: -0.03em;
-  margin-block: var(--space-2);
+  display: block;        /* Luôn chiếm trọn một hàng riêng */
+  clear: both;          /* Tránh bị trôi lên cạnh phần tử trước */
+  margin-top: 12px;     /* Khoảng cách vừa phải với ô "Xin chào, tôi là" */
+  animation:
+    slideUpFade 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards,
+    floating 3.5s ease-in-out infinite 0.8s;
+}
+
+/* Hiệu ứng trượt nhẹ từ dưới lên */
+@keyframes slideUpFade {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Hiệu ứng nhấp nhô nhẹ nhàng */
+@keyframes floating {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
 }
 
 .hero-role {
@@ -628,5 +651,144 @@ ul {
     animation: none !important;
     transition: none !important;
     scroll-behavior: auto !important;
+  }
+}
+
+/* Container form liên hệ */
+.contact-form {
+  max-width: 600px;
+  margin: 30px auto 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* Hàng ngang chứa Name và Email */
+.form-row {
+  display: flex;
+  gap: 16px;
+}
+
+.form-row .form-group {
+  flex: 1;
+}
+
+.form-group {
+  width: 100%;
+}
+
+/* Định dạng ô nhập văn bản và textarea */
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px 16px;
+  font-size: 16px;
+  font-family: inherit;
+  color: #333;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 0;
+  /* Giữ góc vuông phẳng như mẫu */
+  box-sizing: border-box;
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: #777;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #000;
+}
+
+/* Vùng hiển thị nút gửi căn phải */
+.form-actions {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* Nút SEND màu đen nền phẳng */
+.btn-send {
+  background-color: #000;
+  color: #fff;
+  padding: 10px 24px;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+.btn-send:hover {
+  opacity: 0.85;
+}
+
+/* Responsive khi xem trên màn hình điện thoại nhỏ */
+@media (max-width: 600px) {
+  .form-row {
+    flex-direction: column;
+    gap: 16px;
+  }
+}
+
+.brand-name {
+  display: inline-block;
+  font-weight: 700;
+  background: linear-gradient(110deg,
+      #ffffff 35%,
+      #38bdf8 50%,
+      #ffffff 65%);
+  background-size: 200% 100%;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  animation: shineSweep 3.5s ease-in-out infinite;
+  transition: transform 0.25s ease;
+}
+
+.brand:hover .brand-name {
+  transform: translateY(-2px);
+}
+
+@keyframes shineSweep {
+  0% {
+    background-position: 200% 0;
+  }
+
+  100% {
+    background-position: -200% 0;
+  }
+}
+.hero-title {
+  display: inline-block;
+  animation:
+    slideUpFade 1s cubic-bezier(0.16, 1, 0.3, 1) forwards,
+    floating 3.5s ease-in-out infinite 1s; /* Bắt đầu bồng bềnh sau khi hiện xong */
+}
+
+/* Hiệu ứng trượt từ dưới lên lúc mở trang */
+@keyframes slideUpFade {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Chuyển động nhấp nhô liên tục */
+@keyframes floating {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
   }
 }
