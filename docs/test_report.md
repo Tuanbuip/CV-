@@ -63,7 +63,7 @@
 
 ### Desktop — 1440 × 1000
 
-![Ảnh chụp giao diện desktop](screenshots/desktop.png)
+![Ảnh chụp giao diện desktop](screenshots/image.png)
 
 ### Mobile — 390 × 844
 
