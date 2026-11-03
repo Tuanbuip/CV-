@@ -2,7 +2,7 @@
 
 ## Tên dự án
 
-**Portfolio CV cá nhân của Nguyễn Văn An** — trang web giới thiệu hồ sơ và các dự án Frontend.
+**Portfolio CV cá nhân của Bùi Anh Tuấn** — trang web giới thiệu hồ sơ và các dự án Frontend.
 
 ## Mô tả
 
